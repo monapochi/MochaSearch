@@ -1,0 +1,11 @@
+{
+    "name": "mochasearch",
+    "version": "0.1",
+    "description": "a tiny search engine",
+    "license": "MIT",
+    "dependencies": {
+      "bitset": "^5.1.1",
+      "murmurhash3js": "^3.0.1"
+    }
+  }
+  
