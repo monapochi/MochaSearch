@@ -8,7 +8,7 @@ let useNGram = false
 const N = 1
 let bitLength = 1024
 let signatures = []
-const keys = []
+let keys = []
 let documentsCount = 0
 let segmenter = null
 
