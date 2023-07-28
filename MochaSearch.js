@@ -69,7 +69,7 @@ function add(text, key) {
 }
 
 function search(text) {
-    const result = []
+    const result = new Set()
     if (text.length < 1) return result
     const words = useNGram ? nGram(N, text) : segment(text)
     const q = convertToBitVector(words)
@@ -87,7 +87,7 @@ function search(text) {
     let i = documentsCount
     while (i--) {
         if (searchBits.get(i)) {
-            result.push(keys[i])
+            result.add(keys[i])
         }
     }
     return result
